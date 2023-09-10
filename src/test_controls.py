@@ -37,5 +37,8 @@ def test_motor():
 	except KeyboardInterrupt:
 		RPi.GPIO.cleanup()
 
+	except:
+		RPi.GPIO.cleanup()
+
 if __name__ == "__main__":
     test_motor()
